@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankieta | Gerlach</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="left-column">
+                <div class="column-content">
+                    <img src="/logo_b.png" alt="" class="logo">
+                    <div class="motto">
+                        <p>
+                            Ułatwiamy życie
+                        </p>
+                    </div>
+                </div>
+                <!-- <div class="socials">
+                    <ul>
+                        <li>fb</li>
+                        <li>insta</li>
+                        <li>link</li>
+                    </ul>
+                </div> -->
+            </div>
+            <div class="right-column">
+                <!-- STEP-ONE -->
+                <form style="margin: 0 auto;" class="survey-form " method="post" action="">
+                    <div class="step-content form-width current" data-step="1">
+                        <p>Uzupełnij informacje</p>
+                        <div class="fields">
+                            <div class="gender-section">
+                                <p class="input-label">Płeć</p>
+                                <input type="radio" id="genderChoice1" name="gender" value="Kobieta"/>
+                                <label class="gender" for="contactChoice1">Kobieta</label>
+                                <br>
+                                <input type="radio" id="genderChoice2" name="gender" value="Mężczyzna" />
+                                <label class="gender" for="contactChoice2">Mężczyzna</label>
+                                <div id ="req" class="require"><p>Wybierz płeć</p></div>
+                            </div>
+                            <div class="age">
+                                <p class="input-label">Wiek</p>
+                                <input class="form-input" type="number" min="1" max="120"
+                                    placeholder="Podaj swój wiek" />
+                            </div>
+                            <div class="education">
+                                <p class="input-label">Wykształcenie</p>
+                                <select name="education" id="education">
+                                    <option value="podstawowe"> </option>
+                                    <option value="podstawowe">Podstawowe</option>
+                                    <option value="zawodowe">Zawodowe</option>
+                                    <option value="srednie">Średnie</option>
+                                    <option value="wyzsze">Wyższe</option>
+                                </select>
+                            </div>
+                            <div class="salary">
+                                <p class="input-label">Wynagrodzenie</p>
+                                <select name="salary" id="salary">
+                                    <option value="javascript"> </option>
+                                    <option value="php">Poniżej</option>
+                                    <option value="java">2tyś - 4tyś</option>
+                                    <option value="golang">4tyś - 6tyś</option>
+                                    <option value="python">6tyś - 8tyś</option>
+                                    <option value="c#">8tyś - 10tyś</option>
+                                    <option value="c#">Powyżej</option>
+                                </select>
+                            </div>
+                            
+                            <button>
+                                <a href="#" class="btn" id="btnCheck" data-set-step="2">Dalej</a>
+                            </button>
+                            
+                        </div>
+                    </div>
+                    <!-- STEP-TWO -->
+                    <div class="step-content img-section-width" data-step="2">
+                        <div class="fields-img">
+                            <h2>Linia wzorów <b>NATUR</b></h2>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="pickImage1"  data-number="1"/>
+                                    <label for="pickImage1"><img src="/images/natur/1N.png" /></label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="pickImage2" data-number="2"/>
+                                    <label for="pickImage2"><img src="/images/natur/2N.png" /></label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="pickImage3" data-number="3"/>
+                                    <label for="pickImage3"><img src="/images/natur/3N.png" /></label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="pickImage4" data-number="4"/>
+                                    <label for="pickImage4"><img src="/images/natur/4N.png" /></label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="pickImage5" data-number="5"/>
+                                    <label for="pickImage5"><img src="/images/natur/5N.png" /></label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="pickImage6" data-number="6"/>
+                                    <label for="pickImage6"><img src="/images/natur/6N.png" /></label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="pickImage7" data-number="7"/>
+                                    <label for="pickImage7"><img src="/images/natur/7N.png" /></label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="pickImage8" data-number="8"/>
+                                    <label for="pickImage8"><img src="/images/natur/8N.png" /></label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="pickImage9" data-number="9"/>
+                                    <label for="pickImage9"><img src="/images/natur/9N.png" /></label>
+                                </li>
+                            </ul>
+                            <button>
+                                <a href="#" class="btn" data-set-step="1">Wstecz</a>
+                            </button>
+                           <button>
+                                <a href="#" class="btn" id="btnCheck" data-set-step="3">Dalej</a>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- STEP-THREE -->
+                    <div class="step-content img-section-width" data-step="3">
+                        <div class="fields-img">
+                            <h2>Linia wzorów <b>HERBS</b></h2>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="pickImage10" />
+                                    <label for="pickImage10"><img src="/images/herbs/1H.png" /></label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="pickImage11" />
+                                    <label for="pickImage11"><img src="/images/herbs/2H.png" /></label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="pickImage12" />
+                                    <label for="pickImage12"><img src="/images/herbs/3H.png" /></label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="pickImage13" />
+                                    <label for="pickImage13"><img src="/images/herbs/4H.png" /></label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="pickImage14" />
+                                    <label for="pickImage14"><img src="/images/herbs/5H.png" /></label>
+                                </li>
+                            </ul>
+                            <button>
+                                <a href="#" class="btn" data-set-step="2">Wstecz</a>
+                            </button>
+                            <button>
+                                <a href="#" class="btn" data-set-step="4">Dalej</a>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- STEP-FOUR -->
+                    <div class="step-content img-section-width" data-step="4">
+                        <div class="fields-img">
+                            <h2>Linia wzorów <b>MODERN</b></h2>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="pickImage15" />
+                                    <label for="pickImage15"><img src="/images/modern/2M.png" /></label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="pickImage16" />
+                                    <label for="pickImage16"><img src="/images/modern/3M.png"/></label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="pickImage17" />
+                                    <label for="pickImage17"><img src="/images/modern/1M.jpg" style="width: 100%; height: 220px"/></label>
+                                </li>
+                            </ul>
+                            <button>
+                                <a href="#" class="btn" data-set-step="3">Wstecz</a>
+                            </button>
+                            <button>
+                                <a href="#" class="btn" data-set-step="5">Dalej</a>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- STEP-FIVE -->
+                    <div class="step-content img-section-width" data-step="5">
+                        <div class="fields-img">
+                            <h2>Linia wzorów <b>THINKS</b></h2>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="pickImage18" />
+                                    <label for="pickImage18"><img src="/images/thinks/1T.jpg" style="width: 100%; height: 220px"/></label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="pickImage19" />
+                                    <label for="pickImage19"><img src="/images/thinks/2T.jpg" style="width: 100%; height: 220px"/></label>
+                                </li>
+                            </ul>
+                            <button>
+                                <a href="#" class="btn" data-set-step="4">Wstecz</a>
+                            </button>
+                            <button>
+                                <a href="#" class="btn" data-set-step="6">Dalej</a>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- STEP-SIX -->
+                    <div class="step-content img-section-width" data-step="6">
+                        <div class="fields-img">
+                            <h2>Linia wzorów <b>MAGIC GARDEN</b></h2>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="pickImage20" />
+                                    <label for="pickImage20"><img src="/images/garden/1G.png" /></label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="pickImage21" />
+                                    <label for="pickImage21"><img src="/images/garden/2G.png" /></label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="pickImage22" />
+                                    <label for="pickImage22"><img src="/images/garden/3G.png" /></label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="pickImage23" />
+                                    <label for="pickImage23"><img src="/images/garden/4G.png" /></label>
+                                </li>
+                            </ul>
+                            <button>
+                                <a href="#" class="btn" data-set-step="5">Wstecz</a>
+                            </button>
+                            <button>
+                                <a href="#" class="btn" data-set-step="7">Dalej</a>
+                            </button>
+                        </div>
+                    </div>
+                     <!-- STEP-SEVEN -->
+                     <div class="step-content img-section-width" data-step="7">
+                        <div class="fields-img">
+                            <h2>Linia wzorów <b>ORNAMENT</b></h2>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="pickImage24" />
+                                    <label for="pickImage24"><img src="/images/ornament/1O.png" /></label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="pickImage25" />
+                                    <label for="pickImage25"><img src="/images/ornament/2O.png" /></label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="pickImage26" />
+                                    <label for="pickImage26"><img src="/images/ornament/3O.png" /></label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="pickImage27" />
+                                    <label for="pickImage27"><img src="/images/ornament/4O.png" /></label>
+                                </li>
+                            </ul>
+                            <button>
+                                <a href="#" class="btn" data-set-step="6">Wstecz</a>
+                            </button>
+                            <button>
+                                <a href="#" class="btn" data-set-step="8">Dalej</a>
+                            </button>
+                            
+                        </div>
+                    </div>
+                    <!-- STEP-EIGHT-->
+                    <div class="step-content img-section-width" data-step="7">
+                        <div class="fields-img">
+                            <h2>Twoje wybory</h2>
+                            <ul id="last">
+                                
+                            </ul>
+                            <button>
+                                <a href="#" class="btn" data-set-step="6">Wstecz</a>
+                            </button>
+                            <button>
+                                <a href="#" class="btn" data-set-step="8">Dalej</a>
+                            </button>
+                            
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="app.js"></script>
+</body>
+
+</html>
